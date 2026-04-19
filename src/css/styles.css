@@ -1821,3 +1821,7 @@ body.dark {
   color: #333;
   line-height: 1.3;
 }
+
+.preco-scan {
+  color: #14AA00;
+}
