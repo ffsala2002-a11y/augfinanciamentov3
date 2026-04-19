@@ -410,7 +410,7 @@ function onDetect(data) {
 
     ultimoProdutoEl.innerHTML = `
       <strong>${produto.descricao}</strong><br>
-      ${produto.preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
+      <span class="preco-scan">${produto.preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</span>
     `;
 
     mostrarAlerta(`✔ ${produto.descricao}`, "sucesso");
