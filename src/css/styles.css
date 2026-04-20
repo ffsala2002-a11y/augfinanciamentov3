@@ -1768,6 +1768,9 @@ body.dark {
   align-items: center;
 }
 
+.titlle-scan {
+  font-weight: bold;
+}
 
 /* AREA DO VIDEO */
 .scanner-area {
@@ -1816,6 +1819,15 @@ body.dark {
   text-align: center;
   font-size: 14px;
 }
+
+.box-item-scan {
+  background: #D6D6D6;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
 .ultimo-produto {
   margin-top: 8px;
   color: #333;
