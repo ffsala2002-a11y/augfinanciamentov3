@@ -258,8 +258,9 @@ function beep() {
   const osc = audioCtx.createOscillator();
   const gain = audioCtx.createGain();
 
-  osc.frequency.value = 1200;
-  gain.gain.value = 0.2;
+  osc.type = "square";
+  osc.frequency.setValueAtTime(1200, audioCtx.currentTime);
+  gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
 
   osc.connect(gain);
   gain.connect(audioCtx.destination);
@@ -267,7 +268,6 @@ function beep() {
   osc.start();
   osc.stop(audioCtx.currentTime + 0.08);
 }
-
 // ================= NCE =================
 function extrairNCE(codigo) {
   const clean = String(codigo).replace(/\D/g, '');
