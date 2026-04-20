@@ -398,7 +398,7 @@ function processarCodigo(codigo) {
 
     ultimoProdutoEl.innerHTML = `
       <strong>${produto.descricao}</strong><br>
-      ${produto.preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
+      <span class="preco-scan">${produto.preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</span>
     `;
 
     mostrarAlerta("✔ Produto adicionado", "sucesso");
